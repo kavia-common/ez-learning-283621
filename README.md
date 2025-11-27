@@ -14,21 +14,26 @@
 
 ## Start the Application
 
-Note: If you encounter a permission error with the Maven Wrapper, set execute permissions once:
+Note: If you encounter a permission error with the Maven Wrapper or scripts, set execute permissions once:
 ```shell
-chmod +x mvnw run-local.sh
+chmod +x mvnw start.sh run-local.sh
 ```
 
-To start the application locally with the default profile (dev) run this command at the /ez-learning folder
+To start the application locally with the default profile (dev) run this command at the project root:
 ```shell
-./mvnw spring-boot:run -Dspring-boot.run.arguments=--server.port=3001,--server.address=0.0.0.0
+./mvnw spring-boot:run -Dspring-boot.run.arguments="--server.port=3001 --server.address=0.0.0.0"
 ```
 
-Alternatively, you can use the helper script:
+Alternatively, you can use one of the helper scripts:
+```shell
+./start.sh
+```
+or
 ```shell
 ./run-local.sh
 ```
-This will start Spring Boot on port 3001 and bind to 0.0.0.0 so the preview can access it.
+
+The application will start on port 3001 and bind to 0.0.0.0 so the preview can access it. The project uses the Maven Wrapper (./mvnw) to avoid requiring a system-level Maven installation.
 
 ---
 

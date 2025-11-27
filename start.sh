@@ -8,10 +8,11 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
 # PUBLIC_INTERFACE
-# run-local.sh entrypoint
-# This script runs the Spring Boot application using the Maven Wrapper, binding to port 3001 and 0.0.0.0.
+# start.sh entrypoint
+# This script is intended for preview environments and local usage.
+# It runs the Spring Boot application using the Maven Wrapper, binding to port 3001 and 0.0.0.0.
 # Usage:
-#   ./run-local.sh
+#   ./start.sh
 # Behavior:
 #   - Uses the dev profile by default (as configured in application.properties via APP_PROFILE env or default).
 #   - Binds server to 0.0.0.0 so external preview can reach it.
