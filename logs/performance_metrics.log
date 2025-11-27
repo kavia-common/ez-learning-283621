@@ -347,3 +347,567 @@
 2025-11-27 18:38:29,720 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 267, Duration: 0ms
 2025-11-27 18:38:29,900 - Knowledge - INFO - Saving knowledge to Redis...
 2025-11-27 18:38:30,135 - Knowledge - INFO - Knowledge saved to Redis successfully
+2025-11-27 19:30:56,265 - Knowledge - INFO - Created shared MongoDB connection pool
+2025-11-27 19:30:56,580 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2025-11-27 19:30:56,752 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2025-11-27 19:30:56,910 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=25, max_concurrent_llm_calls=50
+2025-11-27 19:30:57,853 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2025-11-27 19:30:58,062 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2025-11-27 19:30:58,252 - Knowledge - INFO - load persisted knowledge: begin
+2025-11-27 19:30:59,025 - Knowledge - INFO - Persisted knowledge files in /app/data/T0015/283621/b1028oe/ez-learning-283621/.knowledge have been renamed to use .json
+2025-11-27 19:30:59,222 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:30:59,443 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:30:59,735 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:30:59,934 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:00,099 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/cursos/curso-detail.html
+2025-11-27 19:31:00,361 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 82ms
+2025-11-27 19:31:01,389 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/cursos/curso-detail.html, Duration: 851ms
+2025-11-27 19:31:01,571 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/cursos/curso-detail.html
+2025-11-27 19:31:01,748 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/cursos/curso-detail.html
+2025-11-27 19:31:01,945 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:02,089 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:02,380 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:02,540 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:02,743 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/logout.html
+2025-11-27 19:31:03,003 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 82ms
+2025-11-27 19:31:03,626 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/logout.html, Duration: 396ms
+2025-11-27 19:31:03,820 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/logout.html
+2025-11-27 19:31:04,035 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/logout.html
+2025-11-27 19:31:04,217 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:04,392 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:04,683 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:04,869 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:05,076 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/db/migration/V1.2__data.sql
+2025-11-27 19:31:05,369 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 73ms
+2025-11-27 19:31:05,784 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/db/migration/V1.2__data.sql, Duration: 222ms
+2025-11-27 19:31:05,966 - Knowledge - INFO - persist search terms embedding for src/main/resources/db/migration/V1.2__data.sql
+2025-11-27 19:31:06,163 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/db/migration/V1.2__data.sql
+2025-11-27 19:31:06,329 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:06,465 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:06,711 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:06,921 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:07,094 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/error.html
+2025-11-27 19:31:07,310 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 74ms
+2025-11-27 19:31:07,810 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/error.html, Duration: 289ms
+2025-11-27 19:31:07,965 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/error.html
+2025-11-27 19:31:08,153 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/error.html
+2025-11-27 19:31:08,333 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:08,511 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:08,750 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:08,934 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:09,150 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/profesores/profesor-edit.html
+2025-11-27 19:31:09,383 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 74ms
+2025-11-27 19:31:10,048 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/profesores/profesor-edit.html, Duration: 487ms
+2025-11-27 19:31:10,245 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/profesores/profesor-edit.html
+2025-11-27 19:31:10,422 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/profesores/profesor-edit.html
+2025-11-27 19:31:10,623 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:10,801 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:11,046 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:11,197 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:11,389 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/model/Curso.java
+2025-11-27 19:31:11,611 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 75ms
+2025-11-27 19:31:12,019 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/model/Curso.java, Duration: 242ms
+2025-11-27 19:31:12,166 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/model/Curso.java
+2025-11-27 19:31:12,339 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/model/Curso.java
+2025-11-27 19:31:12,523 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:12,682 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:12,914 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:13,057 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:13,251 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/dto/UserDto.java
+2025-11-27 19:31:13,511 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 80ms
+2025-11-27 19:31:13,901 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/dto/UserDto.java, Duration: 208ms
+2025-11-27 19:31:14,075 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/dto/UserDto.java
+2025-11-27 19:31:14,247 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/dto/UserDto.java
+2025-11-27 19:31:14,404 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:14,574 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:14,825 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:15,049 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:15,279 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/services/core/impl/UserService.java
+2025-11-27 19:31:15,520 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 73ms
+2025-11-27 19:31:15,992 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/services/core/impl/UserService.java, Duration: 275ms
+2025-11-27 19:31:16,182 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/services/core/impl/UserService.java
+2025-11-27 19:31:16,369 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/services/core/impl/UserService.java
+2025-11-27 19:31:16,532 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:16,725 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:16,969 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:17,160 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:17,392 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/registered.html
+2025-11-27 19:31:17,644 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 74ms
+2025-11-27 19:31:18,042 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/registered.html, Duration: 245ms
+2025-11-27 19:31:18,226 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/registered.html
+2025-11-27 19:31:18,379 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/registered.html
+2025-11-27 19:31:18,597 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:18,743 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:19,006 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:19,175 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:19,323 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/auth/UserRepository.java
+2025-11-27 19:31:19,548 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 74ms
+2025-11-27 19:31:20,010 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/auth/UserRepository.java, Duration: 275ms
+2025-11-27 19:31:20,207 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/auth/UserRepository.java
+2025-11-27 19:31:20,389 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/auth/UserRepository.java
+2025-11-27 19:31:20,582 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:20,778 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:21,056 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:21,274 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:21,459 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/auth/AuthGroup.java
+2025-11-27 19:31:21,736 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 76ms
+2025-11-27 19:31:22,148 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/auth/AuthGroup.java, Duration: 209ms
+2025-11-27 19:31:22,346 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/auth/AuthGroup.java
+2025-11-27 19:31:22,539 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/auth/AuthGroup.java
+2025-11-27 19:31:22,717 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:22,905 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:23,128 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:23,273 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:23,435 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/model/Profesor.java
+2025-11-27 19:31:23,683 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 77ms
+2025-11-27 19:31:24,797 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/model/Profesor.java, Duration: 915ms
+2025-11-27 19:31:24,973 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/model/Profesor.java
+2025-11-27 19:31:25,133 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/model/Profesor.java
+2025-11-27 19:31:25,353 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:25,538 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:25,777 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:25,962 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:26,156 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/static/css/style.css
+2025-11-27 19:31:26,422 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 83ms
+2025-11-27 19:31:26,845 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/static/css/style.css, Duration: 233ms
+2025-11-27 19:31:27,047 - Knowledge - INFO - persist search terms embedding for src/main/resources/static/css/style.css
+2025-11-27 19:31:27,224 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/static/css/style.css
+2025-11-27 19:31:27,414 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:27,606 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:27,923 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:28,103 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:28,309 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/auth/AuthGroupRepository.java
+2025-11-27 19:31:28,594 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 86ms
+2025-11-27 19:31:29,041 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/auth/AuthGroupRepository.java, Duration: 258ms
+2025-11-27 19:31:29,189 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/auth/AuthGroupRepository.java
+2025-11-27 19:31:29,372 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/auth/AuthGroupRepository.java
+2025-11-27 19:31:29,586 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:29,766 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:30,105 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:30,272 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:30,767 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/auth/User.java
+2025-11-27 19:31:31,072 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 84ms
+2025-11-27 19:31:31,521 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/auth/User.java, Duration: 276ms
+2025-11-27 19:31:31,690 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/auth/User.java
+2025-11-27 19:31:31,894 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/auth/User.java
+2025-11-27 19:31:32,111 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:32,271 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:32,502 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:32,726 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:32,915 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/UserController.java
+2025-11-27 19:31:33,195 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 84ms
+2025-11-27 19:31:33,798 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/controller/UserController.java, Duration: 402ms
+2025-11-27 19:31:33,955 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/controller/UserController.java
+2025-11-27 19:31:34,150 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/UserController.java
+2025-11-27 19:31:34,330 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:34,527 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:34,795 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:34,981 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:35,151 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/auth/EzLearningUserDetailsService.java
+2025-11-27 19:31:35,414 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 87ms
+2025-11-27 19:31:35,840 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/auth/EzLearningUserDetailsService.java, Duration: 237ms
+2025-11-27 19:31:36,004 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/auth/EzLearningUserDetailsService.java
+2025-11-27 19:31:36,192 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/auth/EzLearningUserDetailsService.java
+2025-11-27 19:31:36,405 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:36,564 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:36,814 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:37,017 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:37,239 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/static/css/materialize.css
+2025-11-27 19:31:37,498 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 76ms
+2025-11-27 19:31:38,047 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/static/css/materialize.css, Duration: 346ms
+2025-11-27 19:31:38,231 - Knowledge - INFO - persist search terms embedding for src/main/resources/static/css/materialize.css
+2025-11-27 19:31:38,422 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/static/css/materialize.css
+2025-11-27 19:31:38,604 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:38,787 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:39,019 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:39,176 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:39,366 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/static/js/materialize.js
+2025-11-27 19:31:39,677 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 92ms
+2025-11-27 19:31:40,157 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/static/js/materialize.js, Duration: 324ms
+2025-11-27 19:31:40,341 - Knowledge - INFO - persist search terms embedding for src/main/resources/static/js/materialize.js
+2025-11-27 19:31:40,547 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/static/js/materialize.js
+2025-11-27 19:31:40,775 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:40,920 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:41,179 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:41,374 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:41,575 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/db/migration/V1.1__schema.sql
+2025-11-27 19:31:41,853 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 87ms
+2025-11-27 19:31:42,269 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/db/migration/V1.1__schema.sql, Duration: 210ms
+2025-11-27 19:31:42,470 - Knowledge - INFO - persist search terms embedding for src/main/resources/db/migration/V1.1__schema.sql
+2025-11-27 19:31:42,627 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/db/migration/V1.1__schema.sql
+2025-11-27 19:31:42,810 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:42,990 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:43,232 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:43,415 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:43,566 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/cursos/curso-add.html
+2025-11-27 19:31:43,870 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 85ms
+2025-11-27 19:31:44,352 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/cursos/curso-add.html, Duration: 289ms
+2025-11-27 19:31:44,510 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/cursos/curso-add.html
+2025-11-27 19:31:44,742 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/cursos/curso-add.html
+2025-11-27 19:31:44,894 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:45,116 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:45,414 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:45,589 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:45,746 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/user/user-edit.html
+2025-11-27 19:31:46,056 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 91ms
+2025-11-27 19:31:46,544 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/user/user-edit.html, Duration: 306ms
+2025-11-27 19:31:46,752 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/user/user-edit.html
+2025-11-27 19:31:46,918 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/user/user-edit.html
+2025-11-27 19:31:47,083 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:47,246 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:47,497 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:47,663 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:47,843 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/matricula-success.html
+2025-11-27 19:31:48,072 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 86ms
+2025-11-27 19:31:48,761 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/matricula-success.html, Duration: 526ms
+2025-11-27 19:31:48,930 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/matricula-success.html
+2025-11-27 19:31:49,090 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/matricula-success.html
+2025-11-27 19:31:49,234 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:49,445 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:49,697 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:49,878 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:50,037 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/model/Matricula.java
+2025-11-27 19:31:50,308 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 95ms
+2025-11-27 19:31:50,864 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/model/Matricula.java, Duration: 326ms
+2025-11-27 19:31:51,063 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/model/Matricula.java
+2025-11-27 19:31:51,238 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/model/Matricula.java
+2025-11-27 19:31:51,396 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:51,536 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:51,781 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:51,952 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:52,099 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/auth/UserPrincipal.java
+2025-11-27 19:31:52,376 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 81ms
+2025-11-27 19:31:52,773 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/auth/UserPrincipal.java, Duration: 214ms
+2025-11-27 19:31:52,985 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/auth/UserPrincipal.java
+2025-11-27 19:31:53,199 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/auth/UserPrincipal.java
+2025-11-27 19:31:53,341 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:53,524 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:53,751 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:53,956 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:54,146 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/fragments/head.html
+2025-11-27 19:31:54,380 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 81ms
+2025-11-27 19:31:54,799 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/fragments/head.html, Duration: 241ms
+2025-11-27 19:31:54,984 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/fragments/head.html
+2025-11-27 19:31:55,163 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/fragments/head.html
+2025-11-27 19:31:55,315 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:55,455 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:55,701 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:55,896 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:56,132 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/index.html
+2025-11-27 19:31:56,411 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 79ms
+2025-11-27 19:31:56,807 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/index.html, Duration: 212ms
+2025-11-27 19:31:57,004 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/index.html
+2025-11-27 19:31:57,150 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/index.html
+2025-11-27 19:31:57,356 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:57,547 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:57,802 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:57,989 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:58,180 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/services/core/impl/ProfesorService.java
+2025-11-27 19:31:58,411 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 79ms
+2025-11-27 19:31:58,861 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/services/core/impl/ProfesorService.java, Duration: 273ms
+2025-11-27 19:31:59,076 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/services/core/impl/ProfesorService.java
+2025-11-27 19:31:59,277 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/services/core/impl/ProfesorService.java
+2025-11-27 19:31:59,503 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:31:59,688 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:31:59,984 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:00,164 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:00,329 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/PlatformApplication.java
+2025-11-27 19:32:00,608 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 97ms
+2025-11-27 19:32:01,325 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/PlatformApplication.java, Duration: 542ms
+2025-11-27 19:32:01,550 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/PlatformApplication.java
+2025-11-27 19:32:01,704 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/PlatformApplication.java
+2025-11-27 19:32:01,880 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:02,055 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:02,277 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:02,441 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:02,662 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/services/core/impl/CursoService.java
+2025-11-27 19:32:02,958 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 82ms
+2025-11-27 19:32:03,354 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/services/core/impl/CursoService.java, Duration: 253ms
+2025-11-27 19:32:03,554 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/services/core/impl/CursoService.java
+2025-11-27 19:32:03,745 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/services/core/impl/CursoService.java
+2025-11-27 19:32:03,972 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:04,128 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:04,358 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:04,535 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:04,738 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/MatriculaController.java
+2025-11-27 19:32:05,025 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 85ms
+2025-11-27 19:32:05,407 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/controller/MatriculaController.java, Duration: 205ms
+2025-11-27 19:32:05,579 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/controller/MatriculaController.java
+2025-11-27 19:32:05,781 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/MatriculaController.java
+2025-11-27 19:32:05,965 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:06,161 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:06,440 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:06,626 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:06,813 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/services/core/GenericService.java
+2025-11-27 19:32:07,068 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 83ms
+2025-11-27 19:32:07,992 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/services/core/GenericService.java, Duration: 713ms
+2025-11-27 19:32:08,174 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/services/core/GenericService.java
+2025-11-27 19:32:08,340 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/services/core/GenericService.java
+2025-11-27 19:32:08,515 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:08,654 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:08,945 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:09,094 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:09,239 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/discover.html
+2025-11-27 19:32:09,510 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 79ms
+2025-11-27 19:32:09,909 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/discover.html, Duration: 215ms
+2025-11-27 19:32:10,078 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/discover.html
+2025-11-27 19:32:10,261 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/discover.html
+2025-11-27 19:32:10,455 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:10,611 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:10,882 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:11,080 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:11,238 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/profesores/profesores.html
+2025-11-27 19:32:11,522 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 83ms
+2025-11-27 19:32:11,869 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/profesores/profesores.html, Duration: 194ms
+2025-11-27 19:32:12,057 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/profesores/profesores.html
+2025-11-27 19:32:12,240 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/profesores/profesores.html
+2025-11-27 19:32:12,432 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:12,583 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:12,813 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:13,024 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:13,239 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/dto/CursoDto.java
+2025-11-27 19:32:13,490 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 86ms
+2025-11-27 19:32:13,989 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/dto/CursoDto.java, Duration: 314ms
+2025-11-27 19:32:14,196 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/dto/CursoDto.java
+2025-11-27 19:32:14,385 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/dto/CursoDto.java
+2025-11-27 19:32:14,575 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:14,744 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:15,007 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:15,161 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:15,352 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/repositories/MatriculaRepository.java
+2025-11-27 19:32:15,624 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 80ms
+2025-11-27 19:32:16,043 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/repositories/MatriculaRepository.java, Duration: 214ms
+2025-11-27 19:32:16,231 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/repositories/MatriculaRepository.java
+2025-11-27 19:32:16,418 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/repositories/MatriculaRepository.java
+2025-11-27 19:32:16,626 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:16,809 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:17,081 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:17,248 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:17,439 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/user/profile.html
+2025-11-27 19:32:17,697 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 88ms
+2025-11-27 19:32:18,162 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/user/profile.html, Duration: 248ms
+2025-11-27 19:32:18,382 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/user/profile.html
+2025-11-27 19:32:18,585 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/user/profile.html
+2025-11-27 19:32:18,755 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:18,913 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:19,131 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:19,359 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:19,520 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/fragments/header.html
+2025-11-27 19:32:19,781 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 89ms
+2025-11-27 19:32:20,232 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/fragments/header.html, Duration: 253ms
+2025-11-27 19:32:20,414 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/fragments/header.html
+2025-11-27 19:32:20,629 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/fragments/header.html
+2025-11-27 19:32:20,822 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:21,045 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:21,328 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:21,498 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:21,719 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/README.md
+2025-11-27 19:32:21,985 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 81ms
+2025-11-27 19:32:22,384 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: README.md, Duration: 206ms
+2025-11-27 19:32:22,549 - Knowledge - INFO - persist search terms embedding for README.md
+2025-11-27 19:32:22,727 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/README.md
+2025-11-27 19:32:22,920 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:23,105 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:23,398 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:23,583 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:23,739 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/APIController.java
+2025-11-27 19:32:23,977 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 80ms
+2025-11-27 19:32:24,449 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/controller/APIController.java, Duration: 249ms
+2025-11-27 19:32:24,638 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/controller/APIController.java
+2025-11-27 19:32:24,840 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/APIController.java
+2025-11-27 19:32:25,052 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:25,256 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:25,522 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:25,695 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:25,906 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/profesores/profesor-detail.html
+2025-11-27 19:32:26,167 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 83ms
+2025-11-27 19:32:26,595 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/profesores/profesor-detail.html, Duration: 230ms
+2025-11-27 19:32:26,773 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/profesores/profesor-detail.html
+2025-11-27 19:32:26,962 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/profesores/profesor-detail.html
+2025-11-27 19:32:27,139 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:27,321 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:27,576 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:27,764 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:27,948 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/test/java/com/ezlearning/platform/PlatformApplicationTests.java
+2025-11-27 19:32:28,213 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 85ms
+2025-11-27 19:32:28,665 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/test/java/com/ezlearning/platform/PlatformApplicationTests.java, Duration: 292ms
+2025-11-27 19:32:28,832 - Knowledge - INFO - persist search terms embedding for src/test/java/com/ezlearning/platform/PlatformApplicationTests.java
+2025-11-27 19:32:29,055 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/test/java/com/ezlearning/platform/PlatformApplicationTests.java
+2025-11-27 19:32:29,270 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:29,427 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:29,694 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:29,888 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:30,092 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/repositories/ProfesorRepository.java
+2025-11-27 19:32:30,406 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2025-11-27 19:32:30,847 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/repositories/ProfesorRepository.java, Duration: 283ms
+2025-11-27 19:32:31,018 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/repositories/ProfesorRepository.java
+2025-11-27 19:32:31,189 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/repositories/ProfesorRepository.java
+2025-11-27 19:32:31,372 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:31,591 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:31,802 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:31,979 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:32,164 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/cursos/curso-edit.html
+2025-11-27 19:32:32,439 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 85ms
+2025-11-27 19:32:32,871 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/cursos/curso-edit.html, Duration: 267ms
+2025-11-27 19:32:33,031 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/cursos/curso-edit.html
+2025-11-27 19:32:33,214 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/cursos/curso-edit.html
+2025-11-27 19:32:33,401 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:33,577 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:33,845 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:34,035 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:34,221 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/ProfesorController.java
+2025-11-27 19:32:34,492 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 84ms
+2025-11-27 19:32:34,910 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/controller/ProfesorController.java, Duration: 235ms
+2025-11-27 19:32:35,139 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/controller/ProfesorController.java
+2025-11-27 19:32:35,366 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/ProfesorController.java
+2025-11-27 19:32:35,553 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:35,745 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:35,980 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:36,179 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:36,322 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/cursos/cursos.html
+2025-11-27 19:32:36,590 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 86ms
+2025-11-27 19:32:37,020 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/cursos/cursos.html, Duration: 242ms
+2025-11-27 19:32:37,195 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/cursos/cursos.html
+2025-11-27 19:32:37,398 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/cursos/cursos.html
+2025-11-27 19:32:37,578 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:37,782 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:38,033 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:38,205 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:38,414 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/profesores/profesor-add.html
+2025-11-27 19:32:38,654 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 87ms
+2025-11-27 19:32:39,130 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/profesores/profesor-add.html, Duration: 266ms
+2025-11-27 19:32:39,295 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/profesores/profesor-add.html
+2025-11-27 19:32:39,497 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/profesores/profesor-add.html
+2025-11-27 19:32:39,650 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:39,803 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:40,081 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:40,288 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:40,447 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/dto/ProfesotDto.java
+2025-11-27 19:32:40,753 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 92ms
+2025-11-27 19:32:41,167 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/dto/ProfesotDto.java, Duration: 226ms
+2025-11-27 19:32:41,353 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/dto/ProfesotDto.java
+2025-11-27 19:32:41,555 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/dto/ProfesotDto.java
+2025-11-27 19:32:41,726 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:41,884 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:42,121 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:42,304 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:42,451 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/IndexController.java
+2025-11-27 19:32:42,710 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 83ms
+2025-11-27 19:32:43,205 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/controller/IndexController.java, Duration: 298ms
+2025-11-27 19:32:43,359 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/controller/IndexController.java
+2025-11-27 19:32:43,589 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/IndexController.java
+2025-11-27 19:32:43,746 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:43,937 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:44,211 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:44,388 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:44,583 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/dto/MatriculaDto.java
+2025-11-27 19:32:44,881 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 82ms
+2025-11-27 19:32:45,312 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/dto/MatriculaDto.java, Duration: 220ms
+2025-11-27 19:32:45,474 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/dto/MatriculaDto.java
+2025-11-27 19:32:45,645 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/dto/MatriculaDto.java
+2025-11-27 19:32:45,857 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:46,017 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:46,235 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:46,406 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:46,592 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/SecurityController.java
+2025-11-27 19:32:46,916 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 80ms
+2025-11-27 19:32:47,296 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/controller/SecurityController.java, Duration: 204ms
+2025-11-27 19:32:47,512 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/controller/SecurityController.java
+2025-11-27 19:32:47,708 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/SecurityController.java
+2025-11-27 19:32:47,872 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:48,040 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:48,269 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:48,446 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:48,684 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/register.html
+2025-11-27 19:32:48,900 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 80ms
+2025-11-27 19:32:49,302 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/register.html, Duration: 219ms
+2025-11-27 19:32:49,474 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/register.html
+2025-11-27 19:32:49,683 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/register.html
+2025-11-27 19:32:49,887 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:50,080 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:50,375 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:50,527 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:50,710 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/services/core/impl/MatriculaService.java
+2025-11-27 19:32:50,977 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 92ms
+2025-11-27 19:32:51,441 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/services/core/impl/MatriculaService.java, Duration: 240ms
+2025-11-27 19:32:51,660 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/services/core/impl/MatriculaService.java
+2025-11-27 19:32:51,863 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/services/core/impl/MatriculaService.java
+2025-11-27 19:32:52,047 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:52,278 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:52,561 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:52,779 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:52,995 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/fragments/footer.html
+2025-11-27 19:32:53,244 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 81ms
+2025-11-27 19:32:53,655 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/fragments/footer.html, Duration: 228ms
+2025-11-27 19:32:53,842 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/fragments/footer.html
+2025-11-27 19:32:54,018 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/fragments/footer.html
+2025-11-27 19:32:54,200 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:54,378 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:54,650 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:54,841 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:55,065 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/pom.xml
+2025-11-27 19:32:55,369 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 81ms
+2025-11-27 19:32:55,782 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: pom.xml, Duration: 241ms
+2025-11-27 19:32:55,969 - Knowledge - INFO - persist search terms embedding for pom.xml
+2025-11-27 19:32:56,180 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/pom.xml
+2025-11-27 19:32:56,418 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:56,608 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:56,896 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:57,087 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:57,275 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/static/js/init.js
+2025-11-27 19:32:57,525 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 84ms
+2025-11-27 19:32:57,950 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/static/js/init.js, Duration: 237ms
+2025-11-27 19:32:58,134 - Knowledge - INFO - persist search terms embedding for src/main/resources/static/js/init.js
+2025-11-27 19:32:58,306 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/static/js/init.js
+2025-11-27 19:32:58,512 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:58,711 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:58,992 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:32:59,165 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:32:59,316 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/security/ApplicationSecurityConfiguration.java
+2025-11-27 19:32:59,634 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 80ms
+2025-11-27 19:32:59,969 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/security/ApplicationSecurityConfiguration.java, Duration: 200ms
+2025-11-27 19:33:00,139 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/security/ApplicationSecurityConfiguration.java
+2025-11-27 19:33:00,335 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/security/ApplicationSecurityConfiguration.java
+2025-11-27 19:33:00,516 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:33:00,713 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:33:00,971 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:33:01,178 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:33:01,334 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/CursoController.java
+2025-11-27 19:33:01,598 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 83ms
+2025-11-27 19:33:02,104 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/controller/CursoController.java, Duration: 320ms
+2025-11-27 19:33:02,332 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/controller/CursoController.java
+2025-11-27 19:33:02,479 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/CursoController.java
+2025-11-27 19:33:02,647 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:33:02,804 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:33:03,081 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:33:03,285 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:33:03,479 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/login.html
+2025-11-27 19:33:03,759 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 85ms
+2025-11-27 19:33:04,176 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/resources/templates/login.html, Duration: 250ms
+2025-11-27 19:33:04,327 - Knowledge - INFO - persist search terms embedding for src/main/resources/templates/login.html
+2025-11-27 19:33:04,478 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/login.html
+2025-11-27 19:33:04,689 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:33:04,903 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:33:05,174 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 19:33:05,388 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fc056978110>
+2025-11-27 19:33:05,571 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/repositories/CursoRepository.java
+2025-11-27 19:33:05,835 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 84ms
+2025-11-27 19:33:06,262 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: src/main/java/com/ezlearning/platform/repositories/CursoRepository.java, Duration: 255ms
+2025-11-27 19:33:06,436 - Knowledge - INFO - persist search terms embedding for src/main/java/com/ezlearning/platform/repositories/CursoRepository.java
+2025-11-27 19:33:06,665 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/repositories/CursoRepository.java
+2025-11-27 19:33:06,855 - Knowledge - INFO - Loaded 60 files from persisted knowledge
+2025-11-27 19:33:07,047 - Knowledge - INFO - load persisted knowledge: end
+2025-11-27 19:33:07,226 - Knowledge - INFO - Redis support added with prefix knowledge:b1028oe:
+2025-11-27 19:33:07,551 - Knowledge - INFO - Starting knowledge initialization for ID: wfaJsl-b1028oe
+2025-11-27 19:33:07,755 - Knowledge - INFO - 🔍 Checking Redis for build_id: b1028oe
+2025-11-27 19:33:07,943 - Knowledge - INFO - 🔍 Full session ID: wfaJsl-b1028oe
+2025-11-27 19:33:08,105 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b1028oe:
+2025-11-27 19:33:08,316 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2025-11-27 19:33:08,462 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2025-11-27 19:33:08,643 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b1028oe
+2025-11-27 19:33:11,253 - Knowledge - INFO - ✅ Redis cache found! Loading knowledge...
+2025-11-27 19:33:11,457 - Knowledge - INFO - ✅ Successfully loaded from Redis: 60 files
+2025-11-27 19:33:11,659 - Knowledge - INFO - ✅ Redis load complete: 60 files in 3.34s
+2025-11-27 19:33:11,811 - Knowledge - INFO - ⚡ Total Redis path: 3.34s (vs ~300s from disk)
+2025-11-27 19:33:12,031 - Knowledge - INFO - Saving knowledge to Redis...
+2025-11-27 19:33:12,235 - Knowledge - INFO - Knowledge saved to Redis successfully
