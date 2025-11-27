@@ -26,6 +26,32 @@ sh ./mvnw spring-boot:run
 
 ---
 
+## Maven Wrapper and mvn shim
+
+This project uses the Maven Wrapper to ensure consistent builds without requiring Maven to be installed on the system.
+
+- Preferred command locally:
+```sh
+sh ./mvnw spring-boot:run
+```
+
+- A root-level shim named `mvn` is included so that any environment that calls `mvn ...` will automatically delegate to the Maven Wrapper:
+```sh
+# ez-learning-283621/mvn
+#!/bin/sh
+exec sh ./mvnw "$@"
+```
+
+- The preview and deployment processes use the wrapper explicitly:
+  - Procfile: `web: sh mvnw spring-boot:run -Dspring-boot.run.arguments=--server.port=3001 --server.address=0.0.0.0`
+  - scripts/preview.sh: `exec sh mvnw spring-boot:run -Dspring-boot.run.arguments=--server.port=3001 --server.address=0.0.0.0`
+
+Notes:
+- Using `sh mvnw ...` avoids execute-bit issues in CI/preview environments.
+- The `.mvn/wrapper/maven-wrapper.jar` is present, and `.mvn/wrapper/maven-wrapper.properties` targets Maven 3.9.9 with wrapper 3.3.2.
+
+---
+
 ## General Info
 
 This application started as an academic project in August 2019, developed for the Business Applications Development II course at Isil, Lima, Perú.
