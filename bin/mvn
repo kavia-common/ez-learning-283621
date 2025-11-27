@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+if [ -f "./mvnw" ]; then
+  exec sh ./mvnw "$@"
+elif [ -f ".mvn/wrapper/maven-wrapper.jar" ]; then
+  exec java -jar .mvn/wrapper/maven-wrapper.jar "$@"
+else
+  echo "Maven Wrapper not found. Please commit mvnw and .mvn/wrapper/maven-wrapper.jar"
+  exit 127
+fi

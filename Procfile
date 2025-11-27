@@ -1,1 +1,1 @@
-web: sh ./mvn.sh spring-boot:run -Dspring-boot.run.arguments=--server.port=3001 --server.address=0.0.0.0
+web: sh run.sh mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=3001 --server.address=0.0.0.0
