@@ -1,114 +1,66 @@
-/*
-Licensed to the Apache Software Foundation (ASF) under one
-or more contributor license agreements.  See the NOTICE file
-distributed with this work for additional information
-regarding copyright ownership.  The ASF licenses this file
-to you under the Apache License, Version 2.0 (the
-"License"); you may not use this file except in compliance
-with the License.  You may obtain a copy of the License at
-
-  https://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing,
-software distributed under the License is distributed on an
-"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, either express or implied.  See the License for the
-specific language governing permissions and limitations
-under the License.
-*/
-
-import java.io.File;
-import java.io.FileInputStream;
+import java.io.BufferedInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Properties;
 
+/**
+ * Maven Wrapper Downloader companion.
+ * This class is used by the existing mvnw script (legacy Takari flow) when neither curl nor wget are available.
+ * It reads .mvn/wrapper/maven-wrapper.properties (wrapperUrl, distributionUrl) and downloads the wrapper JAR
+ * to .mvn/wrapper/maven-wrapper.jar.
+ */
 public class MavenWrapperDownloader {
 
-    /**
-     * Default URL to download the maven-wrapper.jar from, if no 'downloadUrl' is provided.
-     */
-    private static final String DEFAULT_DOWNLOAD_URL =
-            "https://repo.maven.apache.org/maven2/io/takari/maven-wrapper/0.4.2/maven-wrapper-0.4.2.jar";
+    private static final String PROPERTIES_RELATIVE = ".mvn/wrapper/maven-wrapper.properties";
+    private static final String WRAPPER_JAR_RELATIVE = ".mvn/wrapper/maven-wrapper.jar";
+    private static final String DEFAULT_WRAPPER_JAR_URL =
+            "https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.2.0/maven-wrapper-3.2.0.jar";
 
     /**
-     * Path to the maven-wrapper.properties file, which might contain a downloadUrl property to
-     * use instead of the default one.
+     * Entry point used by mvnw script: it passes MAVEN_PROJECTBASEDIR as the first argument.
+     * @param args args[0] should be the project base directory (MAVEN_PROJECTBASEDIR)
      */
-    private static final String MAVEN_WRAPPER_PROPERTIES_PATH =
-            ".mvn/wrapper/maven-wrapper.properties";
+    public static void main(String[] args) {
+        String baseDir = args != null && args.length > 0 ? args[0] : ".";
+        Path propertiesPath = Paths.get(baseDir, PROPERTIES_RELATIVE);
+        Path wrapperJarPath = Paths.get(baseDir, WRAPPER_JAR_RELATIVE);
 
-    /**
-     * Path where the maven-wrapper.jar will be saved to.
-     */
-    private static final String MAVEN_WRAPPER_JAR_PATH =
-            ".mvn/wrapper/maven-wrapper.jar";
-
-    /**
-     * Name of the property which should be used to override the default download url for the wrapper.
-     */
-    private static final String PROPERTY_NAME_WRAPPER_URL = "wrapperUrl";
-
-    public static void main(String args[]) {
-        System.out.println("- Downloader started");
-        File baseDirectory = new File(args[0]);
-        System.out.println("- Using base directory: " + baseDirectory.getAbsolutePath());
-
-        // If the maven-wrapper.properties exists, read it and check if it contains a custom
-        // wrapperUrl parameter.
-        File mavenWrapperPropertyFile = new File(baseDirectory, MAVEN_WRAPPER_PROPERTIES_PATH);
-        String url = DEFAULT_DOWNLOAD_URL;
-        if (mavenWrapperPropertyFile.exists()) {
-            FileInputStream mavenWrapperPropertyFileInputStream = null;
-            try {
-                mavenWrapperPropertyFileInputStream = new FileInputStream(mavenWrapperPropertyFile);
-                Properties mavenWrapperProperties = new Properties();
-                mavenWrapperProperties.load(mavenWrapperPropertyFileInputStream);
-                url = mavenWrapperProperties.getProperty(PROPERTY_NAME_WRAPPER_URL, url);
-            } catch (IOException e) {
-                System.out.println("- ERROR loading '" + MAVEN_WRAPPER_PROPERTIES_PATH + "'");
-            } finally {
-                try {
-                    if (mavenWrapperPropertyFileInputStream != null) {
-                        mavenWrapperPropertyFileInputStream.close();
-                    }
-                } catch (IOException e) {
-                    // Ignore ...
-                }
-            }
-        }
-        System.out.println("- Downloading from: : " + url);
-
-        File outputFile = new File(baseDirectory.getAbsolutePath(), MAVEN_WRAPPER_JAR_PATH);
-        if (!outputFile.getParentFile().exists()) {
-            if (!outputFile.getParentFile().mkdirs()) {
-                System.out.println(
-                        "- ERROR creating output direcrory '" + outputFile.getParentFile().getAbsolutePath() + "'");
-            }
-        }
-        System.out.println("- Downloading to: " + outputFile.getAbsolutePath());
         try {
-            downloadFileFromURL(url, outputFile);
-            System.out.println("Done");
-            System.exit(0);
-        } catch (Throwable e) {
-            System.out.println("- Error downloading");
+            Files.createDirectories(wrapperJarPath.getParent());
+            String wrapperUrl = loadWrapperUrl(propertiesPath);
+            download(wrapperUrl, wrapperJarPath);
+            System.out.println("Downloaded Maven Wrapper JAR to: " + wrapperJarPath.toAbsolutePath());
+        } catch (Exception e) {
+            System.err.println("Failed to download Maven Wrapper: " + e.getMessage());
             e.printStackTrace();
             System.exit(1);
         }
     }
 
-    private static void downloadFileFromURL(String urlString, File destination) throws Exception {
-        URL website = new URL(urlString);
-        ReadableByteChannel rbc;
-        rbc = Channels.newChannel(website.openStream());
-        FileOutputStream fos = new FileOutputStream(destination);
-        fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
-        fos.close();
-        rbc.close();
+    private static String loadWrapperUrl(Path propertiesPath) throws IOException {
+        String url = DEFAULT_WRAPPER_JAR_URL;
+        if (Files.exists(propertiesPath)) {
+            Properties props = new Properties();
+            try (BufferedInputStream in = new BufferedInputStream(Files.newInputStream(propertiesPath))) {
+                props.load(in);
+            }
+            url = props.getProperty("wrapperUrl", url).trim();
+        }
+        return url;
     }
 
+    private static void download(String url, Path dest) throws IOException {
+        System.out.println("Downloading from: " + url);
+        URL u = new URL(url);
+        try (ReadableByteChannel rbc = Channels.newChannel(u.openStream());
+             FileOutputStream fos = new FileOutputStream(dest.toFile())) {
+            fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
+        }
+    }
 }

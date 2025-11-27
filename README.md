@@ -19,6 +19,11 @@ To start the application locally with the default profile (dev) run this command
 ./mvnw spring-boot:run
 ```
 
+If you run into permission issues with the wrapper (e.g., "./mvnw: Permission denied"), use:
+```shell
+sh ./mvnw spring-boot:run
+```
+
 ---
 
 ## General Info
