@@ -1,15 +1,22 @@
 #!/usr/bin/env sh
 # Lightweight Maven shim to ensure 'mvn' delegates to the Maven Wrapper.
-# This avoids relying on system Maven and does not require executable bits on mvnw.
+# This avoids relying on system Maven and does not require the mvnw file to be executable.
 
-# If mvnw script exists, try to run it using POSIX sh (does not require execute bit)
+set -u
+
+# Prefer running the mvnw script if present
 if [ -f "./mvnw" ]; then
+  # Run with POSIX sh to avoid needing executable bit on mvnw
   sh "./mvnw" "$@"
   status=$?
   # If mvnw failed due to not executable or not found (126/127), try wrapper JAR
   if [ "$status" -eq 126 ] || [ "$status" -eq 127 ]; then
     if [ -f ".mvn/wrapper/maven-wrapper.jar" ]; then
-      exec java -jar ".mvn/wrapper/maven-wrapper.jar" "$@"
+      if [ -n "${JAVA_HOME-}" ] && [ -x "${JAVA_HOME}/bin/java" ]; then
+        exec "${JAVA_HOME}/bin/java" -jar ".mvn/wrapper/maven-wrapper.jar" "$@"
+      else
+        exec java -jar ".mvn/wrapper/maven-wrapper.jar" "$@"
+      fi
     fi
   fi
   exit "$status"
@@ -17,7 +24,11 @@ fi
 
 # Direct JAR fallback when mvnw is missing
 if [ -f ".mvn/wrapper/maven-wrapper.jar" ]; then
-  exec java -jar ".mvn/wrapper/maven-wrapper.jar" "$@"
+  if [ -n "${JAVA_HOME-}" ] && [ -x "${JAVA_HOME}/bin/java" ]; then
+    exec "${JAVA_HOME}/bin/java" -jar ".mvn/wrapper/maven-wrapper.jar" "$@"
+  else
+    exec java -jar ".mvn/wrapper/maven-wrapper.jar" "$@"
+  fi
 fi
 
 echo "Error: Maven Wrapper not found (expected ./mvnw or .mvn/wrapper/maven-wrapper.jar). Please add Maven Wrapper to the project." >&2
