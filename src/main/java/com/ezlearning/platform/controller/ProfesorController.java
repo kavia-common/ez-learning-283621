@@ -35,14 +35,14 @@ public class ProfesorController {
     }
 
     @GetMapping("/add")
-    @PreAuthorize("hasRole('ROLE_USER')")
+    @PreAuthorize("hasRole('USER')")
     public String addProfesor(Model model) {
         model.addAttribute("profesor", new ProfesotDto());
         return "profesores/profesor-add";
     }
 
     @PostMapping("/save")
-    @PreAuthorize("hasRole('ROLE_USER')")
+    @PreAuthorize("hasRole('USER')")
     public String saveProfesor(ProfesotDto profesor) {
         profesorService.create(profesor);
 
@@ -50,7 +50,7 @@ public class ProfesorController {
     }
 
     @GetMapping("/edit/{id_profesor}")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     public String getProfesorForUpdate(@PathVariable Long id_profesor,
                                        Model model) {
         try {
@@ -65,7 +65,7 @@ public class ProfesorController {
     }
 
     @PostMapping("/update/{id_profesor}")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     public String updateProfesor(@PathVariable Long id_profesor,
                                  Profesor profesor, RedirectAttributes attributes, Model model){
 
@@ -106,7 +106,7 @@ public class ProfesorController {
     }
 
     @GetMapping
-    @PreAuthorize("hasRole('ROLE_USER')")
+    @PreAuthorize("hasRole('USER')")
     public String getProfesoresList(Model model) {
         List<Profesor> profesores = profesorService.getAll();
         model.addAttribute("profesores", profesores);
@@ -114,7 +114,7 @@ public class ProfesorController {
     }
 
     @GetMapping("/delete/{id_profesor}")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     public String deleteProfesor(@PathVariable Long id_profesor, Model model) {
         try {
             Profesor profesorActual = profesorRepository.findById(id_profesor).get();
@@ -129,7 +129,7 @@ public class ProfesorController {
     }
 
     @GetMapping("/{id_profesor}")
-    @PreAuthorize("hasRole('ROLE_USER')")
+    @PreAuthorize("hasRole('USER')")
     public String getProfesorDetail(@PathVariable Long id_profesor, Model model) {
         try {
             Profesor profesor = profesorRepository.findById(id_profesor).get();
