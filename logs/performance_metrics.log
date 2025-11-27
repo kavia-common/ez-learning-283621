@@ -1115,3 +1115,206 @@
 2025-11-27 20:48:45,864 - Knowledge - INFO - ⚡ Total Redis path: 3.39s (vs ~300s from disk)
 2025-11-27 20:48:46,133 - Knowledge - INFO - Saving knowledge to Redis...
 2025-11-27 20:48:46,283 - Knowledge - INFO - Knowledge saved to Redis successfully
+2025-11-27 20:59:26,951 - Knowledge - INFO - Created shared MongoDB connection pool
+2025-11-27 20:59:27,264 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2025-11-27 20:59:27,422 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2025-11-27 20:59:27,614 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=25, max_concurrent_llm_calls=50
+2025-11-27 20:59:28,705 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2025-11-27 20:59:28,894 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2025-11-27 20:59:29,099 - Knowledge - INFO - load persisted knowledge: begin
+2025-11-27 20:59:29,295 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:29,504 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:29,668 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/cursos/curso-detail.html
+2025-11-27 20:59:29,842 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:30,041 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:30,224 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/logout.html
+2025-11-27 20:59:30,420 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:30,627 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:30,816 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/db/migration/V1.2__data.sql
+2025-11-27 20:59:31,009 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:31,184 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:31,378 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/error.html
+2025-11-27 20:59:31,582 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:31,730 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:31,898 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/profesores/profesor-edit.html
+2025-11-27 20:59:32,119 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:32,292 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:32,466 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/model/Curso.java
+2025-11-27 20:59:32,675 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:32,838 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:33,059 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/dto/UserDto.java
+2025-11-27 20:59:33,306 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:33,471 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:33,662 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/services/core/impl/UserService.java
+2025-11-27 20:59:33,898 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:34,116 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:34,362 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/registered.html
+2025-11-27 20:59:34,526 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:34,755 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:34,919 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/auth/UserRepository.java
+2025-11-27 20:59:35,111 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:35,336 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:35,546 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/auth/AuthGroup.java
+2025-11-27 20:59:35,777 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:36,003 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:36,185 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/model/Profesor.java
+2025-11-27 20:59:36,397 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:36,589 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:36,755 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/static/css/style.css
+2025-11-27 20:59:36,964 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:37,171 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:37,374 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/auth/AuthGroupRepository.java
+2025-11-27 20:59:37,548 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:37,731 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:37,955 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/auth/User.java
+2025-11-27 20:59:38,151 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:38,388 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:38,581 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/UserController.java
+2025-11-27 20:59:38,838 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:39,027 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:39,209 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/auth/EzLearningUserDetailsService.java
+2025-11-27 20:59:39,438 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:39,622 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:39,786 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/static/css/materialize.css
+2025-11-27 20:59:39,979 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:40,164 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:40,339 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/static/js/materialize.js
+2025-11-27 20:59:40,579 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:40,788 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:40,998 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/db/migration/V1.1__schema.sql
+2025-11-27 20:59:41,193 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:41,402 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:41,596 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/cursos/curso-add.html
+2025-11-27 20:59:41,795 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:41,992 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:42,186 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/user/user-edit.html
+2025-11-27 20:59:42,407 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:42,591 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:42,804 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/matricula-success.html
+2025-11-27 20:59:43,043 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:43,219 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:43,416 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/model/Matricula.java
+2025-11-27 20:59:43,594 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:43,798 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:44,005 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/auth/UserPrincipal.java
+2025-11-27 20:59:44,164 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:44,353 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:44,549 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/fragments/head.html
+2025-11-27 20:59:44,769 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:44,944 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:45,126 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/index.html
+2025-11-27 20:59:45,326 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:45,490 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:45,684 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/services/core/impl/ProfesorService.java
+2025-11-27 20:59:45,871 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:46,029 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:46,237 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/PlatformApplication.java
+2025-11-27 20:59:46,422 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:46,630 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:46,845 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/services/core/impl/CursoService.java
+2025-11-27 20:59:47,053 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:47,231 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:47,456 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/MatriculaController.java
+2025-11-27 20:59:47,638 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:47,830 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:48,014 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/services/core/GenericService.java
+2025-11-27 20:59:48,229 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:48,405 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:48,625 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/discover.html
+2025-11-27 20:59:48,833 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:49,030 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:49,212 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/profesores/profesores.html
+2025-11-27 20:59:49,417 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:49,617 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:49,775 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/dto/CursoDto.java
+2025-11-27 20:59:49,971 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:50,163 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:50,339 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/repositories/MatriculaRepository.java
+2025-11-27 20:59:50,545 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:50,762 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:50,952 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/user/profile.html
+2025-11-27 20:59:51,159 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:51,365 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:51,549 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/fragments/header.html
+2025-11-27 20:59:51,703 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:51,857 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:52,055 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/README.md
+2025-11-27 20:59:52,279 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:52,479 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:52,697 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/APIController.java
+2025-11-27 20:59:52,892 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:53,056 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:53,257 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/profesores/profesor-detail.html
+2025-11-27 20:59:53,464 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:53,643 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:53,858 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/test/java/com/ezlearning/platform/PlatformApplicationTests.java
+2025-11-27 20:59:54,076 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:54,287 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:54,486 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/repositories/ProfesorRepository.java
+2025-11-27 20:59:54,675 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:54,876 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:55,094 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/cursos/curso-edit.html
+2025-11-27 20:59:55,275 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:55,462 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:55,637 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/ProfesorController.java
+2025-11-27 20:59:55,874 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:56,072 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:56,263 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/cursos/cursos.html
+2025-11-27 20:59:56,468 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:56,640 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:56,800 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/profesores/profesor-add.html
+2025-11-27 20:59:56,982 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:57,176 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:57,377 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/dto/ProfesotDto.java
+2025-11-27 20:59:57,575 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:57,799 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:58,023 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/IndexController.java
+2025-11-27 20:59:58,210 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:58,391 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:58,584 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/dto/MatriculaDto.java
+2025-11-27 20:59:58,790 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:58,997 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:59,196 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/SecurityController.java
+2025-11-27 20:59:59,373 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 20:59:59,567 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 20:59:59,749 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/register.html
+2025-11-27 20:59:59,926 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 21:00:00,104 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 21:00:00,293 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/services/core/impl/MatriculaService.java
+2025-11-27 21:00:00,479 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 21:00:00,666 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 21:00:00,854 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/fragments/footer.html
+2025-11-27 21:00:01,037 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 21:00:01,194 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 21:00:01,364 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/pom.xml
+2025-11-27 21:00:01,577 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 21:00:01,793 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 21:00:01,970 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/static/js/init.js
+2025-11-27 21:00:02,136 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 21:00:02,341 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 21:00:02,521 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/security/ApplicationSecurityConfiguration.java
+2025-11-27 21:00:02,717 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 21:00:02,889 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 21:00:03,088 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/controller/CursoController.java
+2025-11-27 21:00:03,278 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 21:00:03,452 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 21:00:03,625 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/resources/templates/login.html
+2025-11-27 21:00:03,827 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-283621.git:kavia-master
+2025-11-27 21:00:03,986 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f91cad4d650>
+2025-11-27 21:00:04,191 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283621/b1028oe/ez-learning-283621/src/main/java/com/ezlearning/platform/repositories/CursoRepository.java
+2025-11-27 21:00:04,361 - Knowledge - INFO - Loaded 60 files from persisted knowledge
+2025-11-27 21:00:04,550 - Knowledge - INFO - load persisted knowledge: end
+2025-11-27 21:00:04,772 - Knowledge - INFO - Redis support added with prefix knowledge:b1028oe:
+2025-11-27 21:00:05,085 - Knowledge - INFO - Starting knowledge initialization for ID: CGCBXb-b1028oe
+2025-11-27 21:00:05,248 - Knowledge - INFO - 🔍 Checking Redis for build_id: b1028oe
+2025-11-27 21:00:05,421 - Knowledge - INFO - 🔍 Full session ID: CGCBXb-b1028oe
+2025-11-27 21:00:05,606 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b1028oe:
+2025-11-27 21:00:05,844 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2025-11-27 21:00:06,020 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2025-11-27 21:00:06,195 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b1028oe
+2025-11-27 21:00:09,010 - Knowledge - INFO - ✅ Redis cache found! Loading knowledge...
+2025-11-27 21:00:09,216 - Knowledge - INFO - ✅ Successfully loaded from Redis: 60 files
+2025-11-27 21:00:09,441 - Knowledge - INFO - ✅ Redis load complete: 60 files in 3.60s
+2025-11-27 21:00:09,644 - Knowledge - INFO - ⚡ Total Redis path: 3.60s (vs ~300s from disk)
+2025-11-27 21:00:09,831 - Knowledge - INFO - Saving knowledge to Redis...
+2025-11-27 21:00:10,000 - Knowledge - INFO - Knowledge saved to Redis successfully
