@@ -1,1 +1,1 @@
-web: sh ./mvnw spring-boot:run -Dspring-boot.run.profiles=${SPRING_PROFILES_ACTIVE:-dev} -Dspring-boot.run.arguments=--server.port=${PORT:-8080}
+web: sh mvnw spring-boot:run -Dspring-boot.run.arguments=--server.port=3001 --server.address=0.0.0.0
