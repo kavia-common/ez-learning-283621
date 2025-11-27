@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head th:insert="fragments/head">
+
+</head>
+<body>
+<header th:insert="fragments/header"></header>
+
+<main>
+    <div class="container">
+        <h3 class="center">Editar Curso</h3>
+        <br>
+        <div class="row">
+            <div class="section col s12 l6 offset-l3">
+                <form action="#" method="post"
+                      th:object="${curso}"
+                      th:action="@{/cursos/edit/{id_profesor}/{id_curso} (id_profesor=${curso.profesor.id_profesor}, id_curso=${curso.id_curso})}"
+                >
+
+                    <div class="input-field">
+                        <label for="nom_curso">Nombre de Curso</label>
+                        <input type="text" class="class-controller"
+                               id="nom_curso"
+                               th:field="*{nomCurso}" autofocus
+                        >
+                    </div>
+
+                    <div class="input-field">
+                        <select th:field="*{dificultadCurso}" id="dificultad" required>
+                            <option th:value="'Facil'" th:text="Facil"></option>
+                            <option th:value="'Intermedio'" th:text="Intermedio"></option>
+                            <option th:value="'Avanzado'" th:text="Avanzado"></option>
+                        </select>
+                        <label>Dificultad</label>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="descripcion_curso">Descripción</label>
+                        <input type="text" class="class-controller"
+                               id="descripcion_curso"
+                               th:field="*{descripcionCurso}"
+                        >
+                    </div>
+
+                    <div class="input-field">
+                        <label for="detalle-curso">Detalle</label>
+                        <textarea th:field="*{detalleCurso}" id="detalle-curso" class="materialize-textarea" required></textarea>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="urlcurso">URL Curso</label>
+                        <input type="text" class="class-controller"
+                               id="urlcurso"
+                               th:field="*{urlCurso}" required
+                        >
+                    </div>
+
+                    <div class="input-field">
+                        <label for="urlimagen">URL Imagen Curso</label>
+                        <input type="text" class="class-controller"
+                               id="urlimagen"
+                               th:field="*{imgurl}" required
+                        >
+                    </div>
+
+                    <button type="submit" class="btn">
+                        Confirmar
+                    </button>
+                    <a th:href="@{/cursos/{id_curso} (id_curso=${curso.id_curso})}" class="btn red lighten-1">Atras</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<br><br>
+
+<footer class="page-footer teal" th:insert="fragments/footer">
+
+</footer>
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="/js/materialize.js"></script>
+<script src="/js/init.js"></script>
+</body>
+</html>

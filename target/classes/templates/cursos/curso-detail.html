@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head th:insert="fragments/head">
+
+</head>
+<body>
+<header th:insert="fragments/header">
+</header>
+
+<main>
+    <div class="container">
+        <div class="row mt-3">
+            <!-- Sidebar -->
+            <div class="col s12 m4 l3">
+                <ul class="collapsible z-depth-3">
+                    <li class="active">
+                        <div class="collapsible-header"><i class="material-icons">book
+                        </i><span th:text="${curso.nomCurso}">Nombre del Curso</span></div>
+                        <div class="collapsible-body"><span th:text="${curso.descripcionCurso}">Descripcion del curso</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">local_atm</i>Precio</div>
+                        <div class="collapsible-body"><span>Gratis</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">school
+                        </i>Dificultad
+                        </div>
+                        <div
+                                class="collapsible-body"><span th:text="${curso.dificultadCurso}">Dificultad
+                            del curso</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">assignment_ind</i>Profesor</div>
+                        <div class="collapsible-body">
+                            <a th:href="@{/profesores/{id_profesor}(id_profesor=${curso.profesor.id_profesor})}">
+                                <div class="row">
+                                <img th:src="${curso.profesor.imgurl}"
+                                     class="col s4 m12 circle responsive-img"
+                                     alt="instructor image"/>
+                                <div class="col s8 m12 teal-text mt-3 center-align">
+                                <strong
+                                    th:text="${curso.profesor.nomProfesor} + ' ' + ${curso.profesor.apeProfesor}">Datos del Profesor</strong>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Course Details -->
+            <div class="col s12 m8 l9">
+                <div class="card z-depth-3">
+                    <div class="card-image">
+                        <img th:src="${curso.imgurl}" alt="course image">
+                        <span id="detail-card-title" class="card-title"><strong th:text="${curso.nomCurso}">Nombre del
+                            Curso</strong>
+                            <span sec:authorize="hasRole('ROLE_ADMIN')">
+                                        <a th:href="@{/cursos/edit/{id_curso}
+                                        (id_curso=${curso.id_curso})}"
+                                           class="btn-floating waves-effect waves-light btn-small yellow darken-1"><i
+                                                class="material-icons">edit</i>
+                                        </a>
+                            </span>
+                            <span sec:authorize="hasRole('ROLE_ADMIN')">
+                                        <a th:href="@{/cursos/delete/{id_curso}
+                                        (id_curso=${curso.id_curso})}"
+                                           class="btn-floating waves-effect waves-light btn-small red lighten-1"><i
+                                                class="material-icons">delete_forever</i>
+                                        </a>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="card-content" th:text="${curso.detalleCurso}">
+                        <p>Detalle del Curso</p>
+                    </div>
+                    <div class="card-action">
+                        <!-- Modal Trigger -->
+                        <a th:if="${matriculado == false}" href="#modal-matricula"
+                           class="teal-text darken-1 modal-trigger"><strong>Matricularse</strong></a>
+                        <a target="_blank" th:unless="${matriculado == false}" th:href="${curso.urlCurso}"
+                           class="teal-text darken-1"><strong>Acceder</strong></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Sctructure -->
+            <div id="modal-matricula" class="modal">
+                <div class="modal-content">
+                    <h4 class="teal-text">Matrícula</h4>
+                    <p>Estás a un paso de comenzar un nuevo viaje rumbo a la excelencia. ¿Deseas matricularte en el
+                        curso de <strong
+                            th:text="${curso.nomCurso}">nombre de
+                        curso</strong>,
+                    dictado por <strong
+                                th:text="${curso.profesor.nomProfesor} + ' ' + ${curso.profesor.apeProfesor}">profesor
+                        </strong>?</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-red btn-flat red-text">Cancelar</a>
+                    <a th:href="|/matricula/save/${curso.id_curso}|"
+                       class="modal-close waves-effect waves-green btn-flat teal-text">
+                        Confirmar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<br><br>
+<footer class="page-footer teal" th:insert="fragments/footer">
+
+</footer>
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="/js/materialize.js"></script>
+<script src="/js/init.js"></script>
+
+</body>
+</html>
