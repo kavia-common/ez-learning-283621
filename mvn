@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+# Proxy shim to guarantee environments that call 'mvn' directly will use the Maven Wrapper.
+# We deliberately invoke via 'sh mvnw' to avoid execute-bit issues on CI/preview environments.
+set -eu
+
+SCRIPT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+exec sh "$SCRIPT_DIR/mvnw" "$@"
