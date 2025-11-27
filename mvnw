@@ -1,4 +1,5 @@
 #!/bin/sh
+# Ensured executable by repository. If permissions are lost, please run: chmod +x mvnw
 # ----------------------------------------------------------------------------
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
